@@ -1,0 +1,25 @@
+{
+  "annotation": "该文件由系统自动生成. 用于插件市场索引,请勿编辑该文件中的任何内容",
+  "+jRUf3nnc3gbQjcO0NOh68vhdAU=": {
+    "type": "github",
+    "name": "Dify",
+    "author": "siuzha",
+    "team": "siuzha",
+    "version": "1.0.0",
+    "description": "Dify聊天插件",
+    "classification": [
+      "ai聊天"
+    ],
+    "filename": "Dify.js",
+    "fileDir": "/plugins/siuzha/Dify.js",
+    "systemVersionRange": "",
+    "isCron": false,
+    "isAdapter": false,
+    "isMod": false,
+    "isService": false,
+    "isAuthentication": false,
+    "isEncPlugin": true,
+    "id": "+jRUf3nnc3gbQjcO0NOh68vhdAU=",
+    "isChatPlugin": true
+  }
+}
