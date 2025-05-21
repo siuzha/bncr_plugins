@@ -1,15 +1,15 @@
 /**
- * @author Aming
+ * @author siuzha
  * @name Dify
- * @team Bncr团队
- * @version 1.1.0
- * @description 基于Dify的智能聊天插件
+ * @team siuzha
+ * @version 1.0.0
+ * @description Dify聊天插件
  * @rule ^ai\s
  * @admin false
  * @public true
  * @priority 1000
  * @disable false
- * @classification ["实用工具"]
+ * @classification ["ai聊天"]
  */
 
 const axios = require('axios');
