@@ -3,7 +3,7 @@ name: 生成 插件市场所需 索引
 on:
   push:
     paths:
-      # - 'Adapter/**'
+      - 'Adapter/**'
       - 'plugins/**'
 
 jobs:
