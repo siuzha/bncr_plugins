@@ -3,7 +3,7 @@ name: 生成 插件市场所需 索引
 on:
   push:
     paths:
-      # - 'Adapter/**'
+      - 'Adapter/**'
       - 'plugins/**'
 
 jobs:
@@ -20,10 +20,14 @@ jobs:
           node-version: '14'
 
       - name: 安装依赖
-        run: npm install
+        run: |
+          cd .github/workflows
+          npm install
 
       - name: 由Actions自动生成插件市场所需JSON索引
-        run: node .github/workflows/generate_index.js
+        run: |
+          cd .github/workflows
+          node generate_index.js
 
       - name: 检查生成的文件
         run: 'test -f publicFileIndex.json || echo "Error: publicFileIndex.json not found"'
