@@ -26,7 +26,7 @@ jobs:
         run: node .github/workflows/generate_index.js
 
       - name: 检查生成的文件
-        run: test -f publicFileIndex.json || echo "Error: publicFileIndex.json not found"
+        run: 'test -f publicFileIndex.json || echo "Error: publicFileIndex.json not found"'
 
       - name: 检查是否有更改
         id: changes
