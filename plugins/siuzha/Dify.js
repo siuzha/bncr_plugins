@@ -6,7 +6,7 @@
  * @description Dify聊天插件，触发方法：ai/AI [内容] 或 艾特机器人 [内容]。"清空对话"或"删除对话"清空对话历史
  * @rule ^(ai\s|AI\s|@\S+\s)
  * @admin false
- * @public false
+ * @public true
  * @priority 1000
  * @disable false
  * @classification ["ai聊天"]
