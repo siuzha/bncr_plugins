@@ -25,11 +25,24 @@ jobs:
       - name: 由Actions自动生成插件市场所需JSON索引
         run: node .github/workflows/generate_index.js
 
+      - name: 检查生成的文件
+        run: test -f publicFileIndex.json || echo "Error: publicFileIndex.json not found"
+
+      - name: 检查是否有更改
+        id: changes
+        run: |
+          git add publicFileIndex.json
+          if git diff --cached --quiet; then
+            echo "::set-output name=has_changes::false"
+          else
+            echo "::set-output name=has_changes::true"
+          fi
+
       - name: 提交并推送更改
+        if: steps.changes.outputs.has_changes == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add publicFileIndex.json
           git commit -m '由Actions自动生成插件市场所需JSON索引'
           git push
         env:
