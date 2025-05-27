@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const PluginCloudStorage = {};
 
-const directories = ['./Adapter', './plugins'];
+const directories = ['../../plugins'];
 
 directories.forEach(dir => {
   function readDirRecursive(currentDir) {
@@ -37,7 +37,7 @@ function RecordIndexInformation(code, dir) {
     description: execParam(code, 'description'),
     classification: execParam(code, 'classification'),
     filename: path.basename(dir),
-    fileDir: '/' + dir.replace(/\\/g, '/'),
+    fileDir: '/' + dir.replace(/\\/g, '/').replace(/^\.\.\/\.\.\//g, ''),
     systemVersionRange: execParam(code, 'systemVersionRange'),
     isCron: execParam(code, 'cron') === 'true',
     isAdapter: execParam(code, 'adapter') === 'true',
@@ -91,7 +91,7 @@ function GetPluginsID(str) {
 
 function writeJson() {
   fs.writeFile(
-    './publicFileIndex.json',
+    '../../publicFileIndex.json',
     JSON.stringify(
       {
         annotation: '该文件由系统自动生成. 用于插件市场索引,请勿编辑该文件中的任何内容',
