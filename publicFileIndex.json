@@ -21,5 +21,28 @@
     "isEncPlugin": true,
     "id": "+jRUf3nnc3gbQjcO0NOh68vhdAU=",
     "isChatPlugin": true
+  },
+  "encpSeZ4tTgK4IDrrOgrhnBRi2Y=": {
+    "type": "github",
+    "name": "Reminder",
+    "author": "小鱼儿",
+    "team": "siuzha",
+    "version": "1.0.0",
+    "description": "备忘录提醒插件，新增提醒：提醒 [时间] [内容]。删除提醒：“删除提醒 [内容关键词]”。查询提醒：“提醒列表”or“我的提醒”",
+    "classification": [
+      "工具",
+      "提醒"
+    ],
+    "filename": "Reminder.js",
+    "fileDir": "/plugins/siuzha/Reminder.js",
+    "systemVersionRange": "",
+    "isCron": false,
+    "isAdapter": false,
+    "isMod": false,
+    "isService": false,
+    "isAuthentication": false,
+    "isEncPlugin": true,
+    "id": "encpSeZ4tTgK4IDrrOgrhnBRi2Y=",
+    "isChatPlugin": true
   }
 }
