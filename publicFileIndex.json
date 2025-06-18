@@ -27,7 +27,7 @@
     "name": "Reminder",
     "author": "小鱼儿",
     "team": "siuzha",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "备忘录提醒插件，新增提醒：提醒 [时间] [内容]。删除提醒：“删除提醒 [内容关键词]”。查询提醒：“提醒列表”or“我的提醒”",
     "classification": [
       "工具",
