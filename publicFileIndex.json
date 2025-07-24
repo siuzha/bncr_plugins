@@ -1,11 +1,11 @@
 {
   "annotation": "该文件由系统自动生成. 用于插件市场索引,请勿编辑该文件中的任何内容",
-  "jqnvI89EpP3pi7KbJSBrLt85bKI=": {
+  "+jRUf3nnc3gbQjcO0NOh68vhdAU=": {
     "type": "github",
     "name": "Dify",
-    "author": "小鱼儿",
+    "author": "siuzha",
     "team": "siuzha",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Dify聊天插件，触发方法：ai/AI [内容] 或 艾特机器人 [内容]。\"清空对话\"或\"删除对话\"清空对话历史。",
     "classification": [
       "ai聊天"
@@ -19,7 +19,7 @@
     "isService": false,
     "isAuthentication": false,
     "isEncPlugin": true,
-    "id": "jqnvI89EpP3pi7KbJSBrLt85bKI=",
+    "id": "+jRUf3nnc3gbQjcO0NOh68vhdAU=",
     "isChatPlugin": true
   },
   "encpSeZ4tTgK4IDrrOgrhnBRi2Y=": {
